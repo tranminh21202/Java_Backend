@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>LoadKH</servlet-name>
+        <servlet-class>control.LoadKH</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddKH</servlet-name>
+        <servlet-class>control.AddKH</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteKH</servlet-name>
+        <servlet-class>control.DeleteKH</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateKH</servlet-name>
+        <servlet-class>control.UpdateKH</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoadKH</servlet-name>
+        <url-pattern>/loadkh</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddKH</servlet-name>
+        <url-pattern>/addkh</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteKH</servlet-name>
+        <url-pattern>/deletekh</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateKH</servlet-name>
+        <url-pattern>/updatekh</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
